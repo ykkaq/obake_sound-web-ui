@@ -17,16 +17,17 @@
     [
       {
         place:'room1',
-        sound:'thunder'
+        sound:'thunder_rain.wav'
       },
       {
         place:'room2',
-        sound:'thunder'
+        sound:'thunder_rain.wav'
       }
     ]
     )">再生</button>
   <br>
 
+  <!--
   <h3>雨</h3>
   <button type="button" id="btn" onclick="clicked_timing(
     [
@@ -41,24 +42,62 @@
     ]
     )">再生</button>
   <br>
+    -->
 
   <h3>おもちゃのタイミング</h3>
+  どれか一つを再生する．<br>
   <button type="button" id="btn" onclick="clicked_timing(
     [
       {
         place:'room1',
-        sound:'rain'
+        sound:'rain.wav'
       },
       {
         place:'room2',
-        sound:'water'
+        sound:'rain.wav'
       },
       {
         place:'baby',
-        sound:'cry'
+        sound:'baby_laughing_1.wav'
       }
     ]
-    )">再生</button>
+    )">再生(赤ちゃん1)</button>
+
+  &emsp;
+  <button type="button" id="btn" onclick="clicked_timing(
+  [
+    {
+      place:'room1',
+      sound:'rain.wav'
+    },
+    {
+      place:'room2',
+      sound:'rain.wav'
+    },
+    {
+      place:'baby',
+      sound:'baby_laughing_2.wav'
+    }
+  ]
+  )">再生(赤ちゃん2)</button>
+
+  &emsp;
+  <button type="button" id="btn" onclick="clicked_timing(
+  [
+    {
+      place:'room1',
+      sound:'rain.wav'
+    },
+    {
+      place:'room2',
+      sound:'rain.wav'
+    },
+    {
+      place:'baby',
+      sound:'baby_laughing_low.wav'
+    }
+  ]
+  )">再生(赤ちゃん3)</button>
   <br>
 
   <h3>チェンソー</h3>
@@ -74,9 +113,9 @@
 
   <hr>
 
-
   <h2>内部テスト用</h2>
   エラーが起こる可能性があるので注意．
+  触らないでほしい．
   <br><br>
 
   <button type="button" class="btn" id="chainsaw" onclick="clicked_timing(
@@ -86,7 +125,27 @@
         sound:'water_sound.wav'
       }
     ]
-    )">test</button>
+    )">room1</button>
+  <br>
+
+  <button type="button" class="btn" id="chainsaw" onclick="clicked_timing(
+    [
+      {
+        place:'room2',
+        sound:'water_sound.wav'
+      }
+    ]
+    )">room2</button>
+  <br>
+
+  <button type="button" class="btn" id="chainsaw" onclick="clicked_timing(
+    [
+      {
+        place:'baby',
+        sound:'water_sound.wav'
+      }
+    ]
+    )">baby</button>
   <br>
 
   <h4>GET info</h4>

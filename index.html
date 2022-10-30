@@ -52,59 +52,8 @@
 
   <h3>赤ちゃん（おもちゃのタイミング）</h3>
   どれか一つを再生する．<br><br>
-  <button type="button" class="btn" onclick="clicked_timing(
-    [
-      {
-        place:'room1',
-        sound:'rain.wav'
-      },
-      {
-        place:'room2',
-        sound:'rain.wav'
-      },
-      {
-        place:'baby',
-        sound:'baby_laughing_1.wav'
-      }
-    ]
-    )">再生(赤ちゃん1_短め)</button>
+  <button type="button" class="btn" onclick="clicked_timimg_randamize()">赤ちゃん（ランダム）</button>
 
-  &emsp;
-  <button type="button" class="btn" onclick="clicked_timing(
-  [
-    {
-      place:'room1',
-      sound:'rain.wav'
-    },
-    {
-      place:'room2',
-      sound:'rain.wav'
-    },
-    {
-      place:'baby',
-      sound:'baby_laughing_2.wav'
-    }
-  ]
-  )">再生(赤ちゃん2_短め)</button>
-
-  &emsp;
-  <button type="button" class="btn" onclick="clicked_timing(
-  [
-    {
-      place:'room1',
-      sound:'rain.wav'
-    },
-    {
-      place:'room2',
-      sound:'rain.wav'
-    },
-    {
-      place:'baby',
-      sound:'baby_laughing_low.wav'
-    }
-  ]
-  )">再生(赤ちゃん3_長め)</button>
-  <br>
 
   <h3>チェンソー</h3>
   <button type="button" class="btn" id="chainsaw" onclick="clicked_timing(
@@ -116,9 +65,10 @@
     ]
     )">再生</button>
   <br>
-
-
-
+  <br>
+  <h3><span style="color:red;">再生停止</span></h3>
+  <button type="button" class="btn" id="stopped" onclick="clicked_timing_stopped()"
+    style="background-color: red; border-color: pink; color: white;">停止</button>
   <br>
   <hr>
 
